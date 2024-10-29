@@ -40,10 +40,9 @@
 
 <body class="font-poppins">
     <!-- Header Section -->
-    <header class="container mx-auto">
-
+    <header class="sticky top-0 bg-white shadow-md z-50">
         <!-- Navbar -->
-        <nav class="my-10">
+        <nav class="container mx-auto py-4">
             <div class="navbar bg-base-100">
                 <div class="flex-1">
                     <div class="dropdown">
@@ -62,22 +61,24 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="font-bold text-3xl">GearShift</a>
+                    <a class="font-bold text-2xl md:text-3xl">GearShift</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 ">
-                        <li><a class="text-xl font-semibold">Home</a></li>
-                        <li><a class="text-xl font-semibold">Shop</a></li>
-                        <li><a class="text-xl font-semibold">News</a></li>
-                        <li><a class="text-xl font-semibold">Contact</a></li>
+                        <li><a class="text-md md:text-lg font-semibold">Home</a></li>
+                        <li><a class="text-md md:text-lg font-semibold">Shop</a></li>
+                        <li><a class="text-md md:text-lg font-semibold">News</a></li>
+                        <li><a class="text-md md:text-lg font-semibold">Contact</a></li>
                     </ul>
                 </div>
                 <div class="">
-                    <a class="btn bg-primary text-white text-xl">Login</a>
+                    <a class="btn btn-md bg-primary text-white text-md md:text-lg">Login</a>
                 </div>
             </div>
         </nav>
-
+    </header>
+    <!-- Slider Section -->
+    <section class="container mx-auto px-4 mt-10">
         <!-- Slider Carousel -->
         <div>
             <div class="carousel w-full rounded-lg">
@@ -85,8 +86,10 @@
                 <div id="slide1" class="carousel-item relative w-full bg-bike-primary-bg">
                     <div class="flex flex-col md:flex-row items-center gap-5 md:px-16 lg:px-24 py-10">
                         <div class="mx-10 md:mx-0 space-y-5  flex-1">
-                            <h1 id="slider-line" class="text-3xl md:4xl lg:text-5xl font-bold">Ride on Ninja H2 with Smile</h1>
-                            <p class="">The Ninja H2 is a high-performance, supercharged motorcycle renowned for its speed and advanced engineering.</p>
+                            <h1 id="slider-line" class="text-3xl md:4xl lg:text-5xl font-bold">Ride on Ninja H2 with
+                                Smile</h1>
+                            <p class="">The Ninja H2 is a high-performance, supercharged motorcycle renowned for its
+                                speed and advanced engineering.</p>
                             <button class="btn bg-primary text-white">Purchase</button>
                         </div>
                         <div class="flex-1 px-20 md:px-10 lg:px-20">
@@ -103,7 +106,8 @@
                     <div class="flex flex-col md:flex-row items-center gap-5 md:px-16 lg:px-24 py-10">
                         <div class="mx-10 md:mx-0 space-y-5 flex-1">
                             <h1 class="text-3xl md:4xl lg:text-5xl font-bold">Ride on R6 V4 with Smile</h1>
-                            <p class="">Yamaha R6 is a high-performance motorcycle designed for precision and speed on the track. Ideal for racing enthusiasts.</p>
+                            <p class="">Yamaha R6 is a high-performance motorcycle designed for precision and speed on
+                                the track. Ideal for racing enthusiasts.</p>
                             <button class="btn bg-primary text-white">Purchase</button>
                         </div>
                         <div class="flex-1 px-20 md:px-10 lg:px-20">
@@ -120,7 +124,8 @@
                     <div class="flex flex-col md:flex-row items-center gap-5 md:px-16 lg:px-24 py-10">
                         <div class="mx-10 md:mx-0 space-y-5 flex-1">
                             <h1 class="text-3xl md:4xl lg:text-5xl font-bold">Ride on Hayabusa with Smile</h1>
-                            <p class="">The Hayabusa is a legendary high-performance motorcycle known for its speed and precision. It blends cutting-edge technology with sleek design.</p>
+                            <p class="">The Hayabusa is a legendary high-performance motorcycle known for its speed and
+                                precision. It blends cutting-edge technology with sleek design.</p>
                             <button class="btn bg-primary text-white">Purchase</button>
                         </div>
                         <div class="flex-1 px-20 md:px-10 lg:px-20">
@@ -134,7 +139,9 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
+    <!-- Slider Section end -->
+
     <!-- Main Section -->
     <main>
         <!-- Featured Bike -->
@@ -159,12 +166,12 @@
                         <img src="./images/others/latest1.png" class="rounded-xl w-full" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title text-2xl lg:text-3xl  uppercase">Ducati XDIAVEL S-73</h2>
+                        <h2 class="card-title text-lg lg:text-xl uppercase">Ducati XDIAVEL S-73</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
                             id nisi lectus at.</p>
                         <div class="card-actions mt-5">
                             <button
-                                class="btn btn-outline text-primary hover:bg-primary hover:border-primary text-xl rounded-lg ">Read
+                                class="btn btn-outline text-primary hover:bg-primary hover:border-primary text-lg rounded-lg ">Read
                                 More</button>
                         </div>
                     </div>
@@ -174,12 +181,12 @@
                         <img src="./images/others/latest2.png" class="rounded-xl w-full" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title text-2xl lg:text-3xl uppercase">Motorcycles & Scooters</h2>
+                        <h2 class="card-title text-lg lg:text-xl uppercase">Motorcycles & Scooters</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
                             id nisi lectus at.</p>
                         <div class="card-actions mt-5">
                             <button
-                                class="btn btn-outline text-primary hover:bg-primary hover:border-primary text-xl rounded-lg ">Read
+                                class="btn btn-outline text-primary hover:bg-primary hover:border-primary text-lg rounded-lg ">Read
                                 More</button>
                         </div>
                     </div>
@@ -189,12 +196,12 @@
                         <img src="./images/others/latest3.png" class="rounded-xl w-full" />
                     </figure>
                     <div class="card-body">
-                        <h2 class="card-title text-2xl lg:text-3xl  uppercase">2021 Honda CBR500R</h2>
+                        <h2 class="card-title text-lg lg:text-xl uppercase">2021 Honda CBR500R</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
                             id nisi lectus at.</p>
                         <div class="card-actions mt-5">
                             <button
-                                class="btn btn-outline text-primary hover:bg-primary hover:border-primary text-xl rounded-lg ">Read
+                                class="btn btn-outline text-primary hover:bg-primary hover:border-primary text-lg rounded-lg ">Read
                                 More</button>
                         </div>
                     </div>
@@ -359,7 +366,8 @@
                 </div>
                 <div class="col-span-8 order-1 lg:order-2 lg:col-span-2  space-y-2">
                     <h3 class="text-2xl">Get the App</h3>
-                    <div class="flex justify-center items-center gap-5 mx-10 lg:mx-0 lg:flex-col md:items-start lg:gap-0">
+                    <div
+                        class="flex justify-center items-center gap-5 mx-10 lg:mx-0 lg:flex-col md:items-start lg:gap-0">
                         <img class="w-1/2 mt-2" src="./images/others/android.png" alt="">
                         <img class="w-1/2 mt-2" src="./images/others/ios.png" alt="">
                     </div>
